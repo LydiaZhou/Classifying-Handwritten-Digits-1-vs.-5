@@ -21,7 +21,7 @@ def extractFile(filename):
         else:
             dict[5].append(featureTuple)
             Outdata.append([1, featureTuple[0], featureTuple[1]])
-            label.append(-1)
+            label.append(0)
     return dict, Outdata, label
 
 # From a matrix extract two features, symmetry in both side and density
