@@ -1,5 +1,6 @@
-'perceptron': False
-'linearRegMinSquare': False
-'linearRegGradient': True
+'perceptron': True
+'linearReg': True
+'logisticReg': True
 'max_epoches': 1000
 'learning_rate': 0.01
+'3rdOrder': True
