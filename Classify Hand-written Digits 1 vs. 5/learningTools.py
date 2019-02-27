@@ -84,6 +84,8 @@ def logisticReg(x, weight, xTest):
     eTest = ((hypoTest - testLabel) ** 2).mean(axis=None)
     return (eTrain, eTest)
 
+
+
 def polyTrans(x):
     # change x=(1, x1, x2) into (1, x1, x2, x1^2, x2^2, x1x2, x1^3, ...)
     x_poly = np.empty((len(x), 10))
