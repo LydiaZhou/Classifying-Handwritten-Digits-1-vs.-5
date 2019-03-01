@@ -1,0 +1,4 @@
+'normalization': True
+'learningRate': 0.02
+'saveMe': True
+'saveFile': "/tmp/mySVM.chkpt"

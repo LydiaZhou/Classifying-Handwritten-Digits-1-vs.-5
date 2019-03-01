@@ -11,6 +11,9 @@ def extractFile(filename):
     for line in currentFile:
         data = str.split(line)
         digit = int(float(data[0]))
+        # Leave out 1 and 5 only
+        if digit != 1 and digit != 5:
+            continue
         # Seperate 1 and the other digits
         matrix = [float(pixel) for pixel in data[1:]]
         featureTuple = featureExtractor(matrix)
@@ -30,7 +33,7 @@ def extractFile(filename):
         else:
             dict['others'].append(featureTuple)
             Outdata.append([featureTuple[0], featureTuple[1]])
-            label.append(0)
+            label.append(-1)
     return dict, Outdata, label, featureRange
 
 # From a matrix extract two features, symmetry in both side and density
